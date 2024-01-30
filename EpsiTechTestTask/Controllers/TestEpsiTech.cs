@@ -17,7 +17,7 @@ namespace EpsiTechTestTask.Controllers
         /// <param name="arr"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        [HttpPost("get")]
+        [HttpPost("GetArrayWithTargetValue")]
         public async Task<ArrayRequest> GetArrayWithTargetValue(int[] arr, int target)
         {
             ArrayRequest result = new() 
