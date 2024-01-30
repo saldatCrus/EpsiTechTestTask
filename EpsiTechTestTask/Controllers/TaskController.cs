@@ -74,7 +74,7 @@ namespace EpsiTechTestTask.Controllers
         /// <param name="Id"></param>
         /// <returns></returns>
         /// <exception cref="AppException"></exception>
-        [HttpPost("remove")]
+        [HttpDelete("remove")]
         public async Task<IActionResult> Remove(Guid Id)
         {
             var taskToRem = await _AppDbContext.Tasks.FirstOrDefaultAsync(x => x.Id == Id) 
